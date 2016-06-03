@@ -1,0 +1,24 @@
+<div class="container" ng-controller="homeCtrl">
+ <h2>NextWealth</h2>
+ <br>
+ <div class="row" style="margin-left: 0px;">
+  <div class="col-md-12">
+   <select class="form-control" ng-model="selectedData" ng-change="renderTableData(selectedData)" data-ng-options="jd.name for jd in JDs">
+    <option value="">Select JD</option>
+   </select>
+  </div>
+ </div>
+ <br>
+ <div class="row" style="margin-left: 0px;border: 1px solid rgba(186, 186, 186, 1);">
+  <div class="col-md-12">
+   <table class="table table-striped">
+    <thead> 
+     <tr> <th ng-repeat="head in tableHeaders">{{head}}</th> </tr>
+    </thead> 
+    <tbody> 
+     <tr ng-repeat="row in tableData"> <td ng-repeat="data in row">{{data}}</td> </tr> 
+    </tbody>
+   </table>
+  </div>
+ </div>
+</div>

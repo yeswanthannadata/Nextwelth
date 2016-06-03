@@ -1,0 +1,32 @@
+(function(){
+
+  var myapp = angular.module('nextwealth', ["ui.router"])
+    myapp.config(function($stateProvider, $urlRouterProvider){
+            
+      // For any unmatched url, send to /route1
+      $urlRouterProvider.otherwise("/login");
+      
+      $stateProvider
+        .state('login', {
+            url: '/login',
+            templateUrl: 'login.html',
+            controller: function($scope, $state){
+                $scope.submit = function() {
+                  $state.go('home');
+                }
+            },
+        })
+        .state('home', {
+            url: '/home',
+            templateUrl: 'home.html',
+            controller: function($scope){
+                $scope.contacts = [{ id:0, name: "Alice" }, { id:1, name: "Bob" }];
+            },
+            onEnter: function(){
+              console.log("enter contacts");
+            }
+    		
+        })
+    })
+
+}());

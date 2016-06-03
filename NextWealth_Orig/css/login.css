@@ -1,0 +1,112 @@
+body {
+
+  background-color: #E5E5E5;
+}
+
+.login-box {
+  position: absolute;
+  top: 20%;
+  left: 36%;
+  background: #202e47;
+  padding: 100px 80px 80px;
+  border-radius: 0% 50%;
+  box-shadow: -10px 11px 10px #808080;
+}
+
+h1 {
+
+  text-align: center;
+  color: #1FC4B1;
+  font-size: 26px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  text-align: left;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.login-box .username {
+  height: 35px;
+  width: 240px;
+  display: block;
+  font-size: 14px;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border: 0px;
+  color: black;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.38);
+  border-width: 0px 0px 2px;
+  border-style: none none solid;
+  border-color: -moz-use-text-color -moz-use-text-color #FFF;
+  color: #FFF;
+  border: 0px solid transparent;
+  background: transparent;
+  border-radius: 0px;
+border-bottom: 2px solid #fff;
+font-weight: 900;
+padding-bottom: 0px;
+color: #FFF;
+padding-left: 5px;
+}
+
+.login-box .username:focus {
+
+  border-bottom: 2px solid #1FC4B1;
+}
+
+.login-box .password {
+  display: block;
+  height: 35px;
+  width: 240px;
+  font-size: 14px;
+  padding: 2px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: 0px;
+  color: #FFF;
+  border: 0px solid transparent;
+  background: transparent;
+  border-radius: 0px;
+border-bottom: 2px solid #fff;
+font-weight: 900;
+padding-bottom: 0px;
+color: #FFF;
+padding-left: 5px
+  
+}
+.login-box .password:focus {
+  border-bottom: 2px solid #1FC4B1;
+}
+.login-box .submit {
+  display: block;
+  margin-top: 10px;
+  width: 260px;
+  background: #1fc4b1;
+  border: 1px solid #1fc4b1;
+  border-radius: 2px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  position: absolute;
+width: 100px;
+bottom: 20px;
+right: 20px;
+padding: 5px 10px;
+}
+.login-box .submit:focus {
+  border: 0px;
+}
+.login-box img {
+  width: 250px;
+  margin-bottom: 20px;
+  padding: 8px;
+}
